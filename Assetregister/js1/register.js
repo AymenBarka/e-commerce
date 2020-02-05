@@ -34,7 +34,6 @@
 //}
 // return verif;
 //}
-localStorage.setItem('tabUsers', JSON.stringify([]))
 
 function register() {
     let object = {

@@ -27,4 +27,6 @@ function modif(){
     userConnecter[index].Quantité = document.getElementById('number').value;
 
     localStorage.setItem('Produit', JSON.stringify(userConnecter));
+
+    window.location.href = "./mesProduits.html"
 }

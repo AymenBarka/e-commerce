@@ -11,7 +11,7 @@ function historique() {
   console.log(ProduitsFiltre)
   for (let i = 0; i < ProduitsFiltre.length; i++) {
     // if (Produit[i].User == userConnecter[index].Email) {
-      html = html + "<tr><td>" + ProduitsFiltre[i].Catégorie + "</td><td>" + ProduitsFiltre[i].Marque + "</td><td>" + ProduitsFiltre[i].Nom + "</td><td>" + ProduitsFiltre[i].Prix + "</td><td>" + ProduitsFiltre[i].Quantité + "</td><td class='text-right'>" + ProduitsFiltre[i].Description + "</td><td><button onclick='modifProduit("+ i + ")'>Modifier</button></td><td><button onclick='supprimer(" + i + ")'>Supprimer</button></td></tr>"
+      html = html + "<tr><td style='max-width:50%!important'> <img style='max-width:40%!important' src = '" + ProduitsFiltre[i].img + "' ></img></td><td>" + ProduitsFiltre[i].Catégorie + "</td><td>" + ProduitsFiltre[i].Marque + "</td><td>" + ProduitsFiltre[i].Nom + "</td><td>" + ProduitsFiltre[i].Prix + "</td><td>" + ProduitsFiltre[i].Quantité + "</td><td class='text-right'>" + ProduitsFiltre[i].Description + "</td><td></td><td><button onclick='modifProduit("+ i + ")'>Modifier</button></td><td><button onclick='supprimer(" + i + ")'>Supprimer</button></td></tr>"
       document.getElementById('produits').innerHTML = html;
     // }
   }
